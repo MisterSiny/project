@@ -1,0 +1,452 @@
+$yellow: #FDBD03;
+$sky: #E5EEFF;
+$black: #2C2C2C;
+
+@mixin reset {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+* {
+    @include reset;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 1265px;
+    margin: auto;
+
+    .container-image {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        width: 45%;
+
+        img {
+            object-fit: contain;
+            object-position: center;
+            max-width: 100%;
+            margin-top: 138px;
+        }
+
+        .line-t {
+            width: 434px;
+            height: 18px;
+            background-color: $yellow;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+
+    .container-form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 55%;
+        position: relative;
+
+        .wathsapp {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 63px;
+            left: 65px;
+            width: 95px;
+            height: 95px;
+            background-color: $yellow;
+            border-radius: 50%;
+
+            img {
+                object-fit: contain;
+                object-position: center;
+                width: 54px;
+                height: 54px;
+            }
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            margin-top: 226px;
+
+            h1 {
+                text-align: right;
+                font: normal normal 900 66px/97px Heebo;
+                color: $yellow;
+                margin-bottom: 15px;
+            }
+
+            p {
+                text-align: right;
+                font: normal normal normal 20px/29px Heebo;
+                color: #020253;
+                width: 45%;
+                margin-bottom: 38px;
+            }
+
+            .form-email-name {
+                display: flex;
+
+                .form-name {
+                    display: flex;
+                    flex-direction: column;
+
+                    label {
+                        text-align: right;
+                        font: normal normal bold 16px/24px Heebo;
+                        color: $black;
+                    }
+
+                    input {
+                        width: 418px;
+                        height: 50px;
+                        border: none;
+                        border-bottom: 4px $yellow solid;
+                        background-color: $sky;
+                        margin-left: 19.5px;
+                        margin-bottom: 15px;
+                    }
+                }
+
+                .form-email {
+                    display: flex;
+                    flex-direction: column;
+
+                    label {
+                        text-align: right;
+                        font: normal normal bold 16px/24px Heebo;
+                        color: $black;
+                    }
+
+                    input {
+                        width: 418px;
+                        height: 50px;
+                        border: none;
+                        border-bottom: 4px $yellow solid;
+                        background-color: $sky;
+                    }
+                }
+            }
+
+            .form-surname {
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    text-align: right;
+                    font: normal normal bold 16px/24px Heebo;
+                    color: $black;
+                }
+
+                input {
+                    width: 854px;
+                    height: 143px;
+                    border: none;
+                    border-bottom: 4px $yellow solid;
+                    background-color: $sky;
+                    margin-bottom: 73.5px;
+                }
+
+            }
+
+            button {
+                width: 166px;
+                height: 50px;
+                background-color: $yellow;
+                text-align: right;
+                font: normal normal bold 22px/30px Heebo;
+                color: #000000;
+                border: none;
+                text-align: center;
+            }
+        }
+
+        .icons {
+            gap: 38px;
+            display: flex;
+            position: absolute;
+            bottom: 56px;
+            left: 55px;
+
+            .phone {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 95px;
+                height: 95px;
+                background-color: $yellow;
+                border-radius: 50%;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+
+            .in {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 95px;
+                height: 95px;
+                background-color: $yellow;
+                border-radius: 50%;
+
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+
+            .instagram {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 95px;
+                height: 95px;
+                background-color: $yellow;
+                border-radius: 50%;
+            }
+
+            .facebook {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 95px;
+                height: 95px;
+                background-color: $yellow;
+                border-radius: 50%;
+            }
+        }
+
+        .line-b {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 18px;
+            background-color: $yellow;
+        }
+    }
+
+    @media(max-width:768px) {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+
+        .container-image {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+            img {
+                object-fit: contain;
+                object-position: center;
+                width: 79px;
+                height: 119px;
+                margin-top: 58px;
+            }
+
+            .line-t {
+                width: 90%;
+                height: 10px;
+            }
+        }
+
+        .container-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            position: relative;
+
+            .wathsapp {
+                display: none;
+            }
+
+            .form {
+                margin-top: 48px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                h1 {
+                    font: normal normal 900 40px/59px Heebo;
+                    margin-bottom: 9px;
+                }
+
+                p {
+                    font: normal normal normal 15px/22px Heebo;
+                    margin-bottom: 35px;
+                    width: 80%;
+                    text-align: center;
+                }
+
+                .form-email-name {
+                    display: flex;
+                    flex-direction: column;
+
+                    .form-name {
+                        display: flex;
+                        flex-direction: column;
+
+                        label {
+                            font: normal normal bold 10px/14px Heebo;
+                            margin-bottom: 5px;
+                        }
+
+                        input {
+                            width: 309px;
+                            height: 37px;
+                            border-bottom: 3px $yellow solid;
+                            margin-left: 0px;
+                            margin-bottom: 15px;
+                        }
+                    }
+
+                    .form-email {
+                        display: flex;
+                        flex-direction: column;
+
+                        label {
+                            font: normal normal bold 10px/14px Heebo;
+                            margin-bottom: 5px;
+                        }
+
+                        input {
+                            width: 309px;
+                            height: 37px;
+                            border-bottom: 3px $yellow solid;
+                            margin-left: 0px;
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+
+                .form-surname {
+                    display: flex;
+                    flex-direction: column;
+
+                    label {
+                        font: normal normal bold 10px/14px Heebo;
+                        margin-bottom: 5px;
+                    }
+
+                    input {
+                        width: 309px;
+                        height: 105px;
+                        border-bottom: 4px $yellow solid;
+                        margin-bottom: 18px;
+                    }
+
+                }
+
+                button {
+                    width: 309px;
+                    height: 37px;
+                    background-color: $yellow;
+                    text-align: right;
+                    font: normal normal bold 15px/21px Heebo;
+                    letter-spacing: 0.23px;
+                    text-align: center;
+                    margin-bottom: 145px;
+                }
+            }
+
+            .icons {
+                width: 100%;
+                gap: 17px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                bottom: 26px;
+                left: 0px;
+
+                .phone {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 46px;
+                    height: 46px;
+                    background-color: $yellow;
+                    border-radius: 50%;
+
+                    img {
+                        width: 17px;
+                        height: 17px;
+                    }
+                }
+
+                .in {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 46px;
+                    height: 46px;
+                    background-color: $yellow;
+                    border-radius: 50%;
+
+
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+
+                .instagram {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 46px;
+                    height: 46px;
+                    background-color: $yellow;
+                    border-radius: 50%;
+
+                    img {
+                        width: 35px;
+                        height: 35px;
+                    }
+                }
+
+                .facebook {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 46px;
+                    height: 46px;
+                    background-color: $yellow;
+                    border-radius: 50%;
+
+                    img {
+                        width: 35px;
+                        height: 35px;
+                    }
+                }
+            }
+
+            .line-b {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 10px;
+                background-color: $yellow;
+            }
+        }
+    }
+}

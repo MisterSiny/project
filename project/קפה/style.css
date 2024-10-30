@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.work {
+    position: relative;
+    background-image: url(./images/header-background\ \(1\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    z-index: 0;
+    height: 400px;
+}
+
+.clr {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: #13E8F163;
+    width: 100%;
+    z-index: 1;
+}
+
+.box h1 {
+    z-index: 2;
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.box p {
+    z-index: 2;
+    font-size: 16px;
+    width: 50%;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.projects {
+    background-color: #f9efef;
+}
+
+.card>img {
+    filter: grayscale(100);
+    transition: all 0.3s;
+}
+
+.card>img:hover {
+    filter: grayscale(0);
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color: aqua !important;
+}
+
+.navbar-brand {
+    font-family: Satisfy;
+}
+
+.navbar-brand>img {
+    transition: all .3s;
+}
+
+.navbar-brand>img:hover {
+    transform: scale(1.2, 1.2);
+}
+
+#image {
+    width: 100%;
+    height: 100%;
+    box-shadow: 5px 5px 20px black, -5px -5px 20px black;
+    border-radius: 10px;
+    filter: grayscale(100%);
+    transition: all .3s;
+}
+
+#image:hover {
+    filter: grayscale(0%);
+    cursor: pointer;
+    transform: scale(1.04, 1.04);
+}
+
+.name {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    background-color: black;
+    color: aqua;
+}
+
+@media(max-width:768px) {
+    .box h1 {
+        font-size: 26px;
+    }
+
+    .box p {
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .pictures {
+        margin: auto;
+    }
+}

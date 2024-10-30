@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.work {
+    position: relative;
+    background-image: url(./image/header-background\ \(1\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    z-index: 0;
+    height: 400px;
+}
+
+.clr {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: #13E8F163;
+    width: 100%;
+    z-index: 1;
+}
+
+.box h1 {
+    z-index: 2;
+    font-size: 80px;
+    font-weight: 900;
+}
+
+.img-profile {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 3px 3px 10px black, -3px -3px 10px black;
+
+}
+
+.projects {
+    background-color: #f9efef;
+}
+
+.card>img {
+    filter: grayscale(100);
+    transition: all 0.3s;
+}
+
+.card>img:hover {
+    filter: grayscale(0);
+    cursor: pointer;
+}
+
+.message {
+    background-image: url(./image/annie-spratt-AkKE1KOMD5E-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+}
+
+.nav-link:hover {
+    color: aqua !important;
+}
+
+.navbar-brand {
+    font-family: Satisfy;
+}
+
+.navbar-brand>img {
+    transition: all .3s;
+}
+
+.navbar-brand>img:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.communication {
+    background-color: aqua;
+    width: 100%;
+    height: 150px;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img {
+    width: 50px;
+    height: 50px;
+}
+
+.name {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    background-color: black;
+    color: aqua;
+}
+
+@media(max-width:768px) {
+    .box h1 {
+        font-size: 45px;
+    }
+
+    .box p {
+        font-size: 14px;
+        width: 90% !important;
+    }
+
+    .icon .container>img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .about_me p {
+        width: 100% !important;
+        font-size: 14px;
+    }
+
+    .message .container {
+        align-items: center !important;
+    }
+
+    .message .container p {
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .message .container form {
+        width: 100% !important;
+    }
+
+    .img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .social p {
+        font-size: 12px;
+    }
+
+    .communication {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}

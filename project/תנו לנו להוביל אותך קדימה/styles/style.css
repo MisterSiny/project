@@ -1,0 +1,191 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 295px;
+    padding-top: 149px;
+    position: relative;
+    z-index: 0;
+}
+
+.img-d {
+    position: absolute;
+    top: 0;
+    right: 0;
+    object-fit: contain;
+    object-position: top;
+    z-index: -1;
+
+}
+
+.img-m {
+    display: none;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 569px;
+    height: 643px;
+    background-color: #1A1A1AD4;
+    padding: 75px 75px 140px 75px;
+}
+
+.form>h1 {
+    color: #FFFFFF;
+    text-align: right;
+    font: normal normal 900 36px/53px Heebo;
+    margin-bottom: 21px;
+}
+
+.form>p {
+    text-align: right;
+    font: normal normal normal 20px/29px Heebo;
+    color: #F9F9F9;
+    text-align: center;
+    margin-bottom: 44px;
+}
+
+.form-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-name>label {
+    text-align: right;
+    font: normal normal bold 16px/24px Heebo;
+    color: #FFFFFF;
+}
+
+.form-name>input {
+    width: 418px;
+    height: 50px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #D31C75;
+    margin-bottom: 18px;
+}
+
+.form-email>label {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-email>label {
+    text-align: right;
+    font: normal normal bold 16px/24px Heebo;
+    color: #FFFFFF;
+}
+
+.form-email>input {
+    width: 418px;
+    height: 50px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #D31C75;
+    margin-bottom: 34.5px;
+}
+
+.button>button {
+    width: 166px;
+    height: 50px;
+    background: #D31C75 0% 0% no-repeat padding-box;
+    text-align: right;
+    font: normal normal bold 22px/30px Heebo;
+    color: #FFFFFF;
+    text-align: center;
+    border: none;
+}
+
+@media(max-width:1199px) {
+    .container {
+        justify-content: center;
+        padding-right: 0px;
+        align-items: center;
+    }
+}
+
+@media(max-width:768px) {
+    .img-d {
+        display: none;
+    }
+
+    .img-m {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        object-fit: cover;
+        object-position: top;
+        width: 100%;
+        height: 213px;
+        z-index: -1;
+    }
+
+    .container {
+        align-items: flex-start;
+        padding-top: 89px;
+    }
+
+    .form {
+        align-items: center;
+        justify-content: center;
+        width: 299px;
+        height: 441px;
+        padding: 42px 35px 50px 34px;
+    }
+
+    .form>h1 {
+        font: normal normal 900 25px/30px Heebo;
+        margin-bottom: 20px;
+        text-align: center;
+        width: 85%;
+    }
+
+    .form>p {
+        font: normal normal normal 15px/22px Heebo;
+        margin-bottom: 22.5px;
+    }
+
+    .form-name>label {
+        font: normal normal bold 14px/21px Heebo;
+        padding-bottom: 2px;
+    }
+
+    .form-name>input {
+        width: 230px;
+        height: 28px;
+        margin-bottom: 25px;
+    }
+
+    .form-email>label {
+        font: normal normal bold 14px/21px Heebo;
+        padding-bottom: 2px;
+    }
+
+    .form-email>input {
+        width: 230px;
+        height: 28px;
+        margin-bottom: 16.5px;
+    }
+
+    .button {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: flex-end;
+    }
+
+    .button>button {
+        width: 75px;
+        height: 33px;
+        font: normal normal bold 15px/20px Heebo;
+    }
+}
