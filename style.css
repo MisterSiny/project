@@ -40,6 +40,16 @@
 
 }
 
+.container>img {
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.container>img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 .projects {
     background-color: #f9efef;
 }
