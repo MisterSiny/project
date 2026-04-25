@@ -11,7 +11,17 @@ Project five: discover the world;
 Project six: free consultation:
 Project seven: high tech;
 Project eight: cookies;
-project nine: Go ahead;
+Project nine: Go ahead;
+
+There are also the following projects that are written using JavaScript:
+
+Project Tic-tac-toe
+Project Sudoku
+Project Snake
+Project Pac-Man
+Project Bingo
+Project Solitaire
+
 
 Explore our diverse designs and find the perfect look 
 for your next project! Each design is crafted with 

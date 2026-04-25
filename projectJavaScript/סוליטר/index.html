@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Solitaire PRO</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+
+    <h1>🃏 Solitaire PRO</h1>
+
+    <div class="controls">
+        <button onclick="initGame()">🔄 משחק חדש</button>
+        <button onclick="undo()">↩️ Undo</button>
+    </div>
+
+    <div class="game">
+
+        <div class="top">
+            <div id="stock" class="pile"></div>
+            <div id="waste" class="pile"></div>
+
+            <div class="foundations">
+                <div class="foundation" data-suit="♥"></div>
+                <div class="foundation" data-suit="♦"></div>
+                <div class="foundation" data-suit="♣"></div>
+                <div class="foundation" data-suit="♠"></div>
+            </div>
+        </div>
+
+        <div id="tableau" class="tableau"></div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

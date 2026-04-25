@@ -54,6 +54,10 @@
     background-color: #f9efef;
 }
 
+.games {
+    background-color: #b4f3f563;
+}
+
 .card>img {
     filter: grayscale(100);
     transition: all 0.3s;
